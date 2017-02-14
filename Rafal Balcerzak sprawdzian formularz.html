@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Rafał Balcerzak formularz</title>
+</head>
+<body>
+	<form method="POST" action="formularz.txt" name="formularz" id="formularz">
+		<input name="imie" placeholder="Wpisz imie">
+		<label>Imie</label><br>
+		
+		<input name="Nazwisko" placeholder="Wpisz nazwisko">
+		<label>Nazwisko</label><br>
+		
+		<input type="password" name="haslo">
+		<label>Hasło</label><br>
+		
+		<input type="password" name="haslo_powtorz">
+		<label>Powtórz hasło</label><br>
+		
+		<select name="wielkosc">
+			<option></option>
+			<option value="<1000"><1000 </option>
+			<option value="1000-100000">1000-100000 </option>
+			<option value=">100000">>10000</option>
+		</select>
+		
+		<fieldset style="width: 350px">
+			<legend>Płeć</legend>
+			<input type="radio" name="plec" value="kobieta" id="kobieta">Kobieta<br>
+			<input type="radio" name="plec" value="Mężczyzna" id="mezczyzna">Mężczyzna<br>
+			<input type="radio" name="plec" value="np" id="np">Nie powiem<br>
+		</fieldset>
+		
+		<fieldset style="width: 350px">
+				<legend>Adres</legend>
+				<input name="kod1" size="1" maxlength="2">-
+				<input name="kod2" size="1" maxlength="3">
+				<label>Kod pocztowy</label><br>
+				
+				<input name="miasto" id="miasto">
+				<label>Miasto</label><br>
+				
+				<input name="ulica" id="ulica">
+				<label>Ulica</label>
+				
+				<input name="nr" id="nr" size="3">
+				<label>Numer domu</label>
+		</fieldset>
+	
+		Uwagi<br>
+		<textarea name="uwagi" cols="40" rows="5">
+		</textarea><br>
+		
+		<input type="checkbox" name="dane" value="dane" id="dane">Wyrażam zgodę na przetwarzanie danych osobowych<br>
+		<input type="checkbox" name="news" value="news" id="news">Zapisuję się do newslettera<br>
+		
+		<input value="Wysyłam" type="submit">
+	</form>
+</body>
+</html>

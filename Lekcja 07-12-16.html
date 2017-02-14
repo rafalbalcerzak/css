@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Rafal Balcerzak</title>
+</head>
+<body>
+	<form method="POST" action="Formularz.txt" name="formularz" id="formularz">
+		<input name="imie" placeholder="imie">
+		<label>imie</label><br>
+		
+		<input name="nazwisko" placeholder="nazwisko">
+		<label>nazwisko</label><br>
+		
+		<input name="login" maxlength="16" placeholder="login">
+		<label>login</label><br>
+		
+		<input type="password" name="haslo" placeholder="haslo">
+		<label>haslo</label><br>
+		
+		<input name="kod1" size="1" maxlength="2" placeholder="00"> -
+		<input name="kod2" size="2" maxlength="3" placeholder="000">
+		<label>kod pocztowy</label><br>
+		
+		<fieldset style="width: 300px">
+			<legend >Zainteresowania</legend>
+			<table>
+				<tr>
+					<td>
+					<input type="checkbox" name="sport" Value="sport" id="sport"></input>
+					<label>sport</label>
+					</td>
+					<td>
+					<input type="checkbox" name="film" Value="film" id="film"></input>
+					<label>film</label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+					<input type="checkbox" name="teatr" Value="teatr" id="teatr"></input>
+					<label>teatr</label>
+					</td>
+					<td>
+					<input type="checkbox" name="muzyka" Value="muzyka" id="muzyka"></input>
+					<label>muzyka</label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+					<input type="checkbox" name="turystyka" Value="turystyka" id="turystyka"></input>
+					<label>turystyka</label>
+					</td>
+					<td>
+					<input type="checkbox" name="informatyka" Value="informatyka" id="informatyka"></input>
+					<label>informatyka</label>
+					</td>
+				</tr>	
+			</table>
+		</fieldset>
+		
+		<fieldset style="width: 300px">
+			<legend>Pleć</legend>
+			<input type="radio" name="plec" Value="kobieta" id="kobieta"> kobieta</input><br>
+			<input type="radio" name="plec" Value="mężczyzna" id="mężczyzna">mężczyzna</input><br>
+			<input type="radio" name="plec" Value="nieokreślon" id="nieokreślono">nieokreślono</input>
+		</fieldset>
+		
+		<textarea name="opis" cols="20" rows="5">
+		wartość domyślna
+		</textarea><br>
+		
+		<select name="miasto">
+			<option></option></option>
+			<option value="lodz">Łódź</option>
+			<option value="waw">Warszawa</option>
+		</select><br>
+
+		<select multiple name="kolory" size="4">
+			<option></option></option>
+			<option value="czerwony">czerwony</option>
+			<option value="niebieski">Niebieski</option>
+			<option value="zolty">Żółty</option>
+			<option value="zielony">Zielony</option>
+			<option value="fioletowy">Fioletowy</option>
+			<option value="rozowy`">Różowy</option>
+		</select>
+			
+		<br><input Value="wyslij" type="submit"></input>
+	</form>
+</body>	
+</html>
